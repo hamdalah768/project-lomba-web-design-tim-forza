@@ -1,0 +1,10 @@
+{
+  "name": "lokanaik-digital-stage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LokaNaik Digital Stage static multi-page website",
+  "scripts": {
+    "start": "python -m http.server 4173",
+    "test": "node scripts/smoke-test.mjs"
+  }
+}

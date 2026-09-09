@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Masuk ke demo LokaNaik dengan alur autentikasi lokal yang aman untuk pembelajaran.">
+  <meta name="theme-color" content="#070a16">
+  <title>Masuk — LokaNaik</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="auth-page" data-page="login">
+  <main class="auth-shell" id="auth-root">
+    <section class="auth-stage" aria-label="Panggung visual LokaNaik">
+      <a class="brand auth-brand" href="index.html" aria-label="Kembali ke beranda LokaNaik"><span class="brand-mark" aria-hidden="true"><span>✦</span></span><span class="brand-copy"><span class="brand-name">LOKANAIK</span><span class="brand-tagline">Usaha lokal • Langkah besar</span></span></a>
+      <div>
+        <span class="eyebrow">Akses aman • LokaNaik</span>
+        <h1>Lanjutkan langkah digitalmu.</h1>
+        <p>Akses kembali modul praktis, draft katalog, dan jaringan pembelajaran wirausaha lokal Indonesia.</p>
+      </div>
+      <div class="auth-visual" aria-hidden="true"><span class="auth-orbit orbit-a"></span><span class="auth-orbit orbit-b"></span><span class="auth-token">✦</span><span class="auth-visual-label">RUANG USAHA<br><strong>TERLINDUNGI</strong></span></div>
+      <div class="auth-stats"><div><strong>64.200+</strong><span>usaha terkoneksi</span></div><div><strong>256-bit</strong><span>standar proteksi demo</span></div></div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-panel-inner">
+        <a class="section-action" href="index.html">← Kembali ke beranda</a>
+        <h2>Selamat datang kembali.</h2>
+        <p class="subcopy">Pilih metode akses untuk melanjutkan perjalanan belajar dan mengelola etalasemu.</p>
+
+        <div class="provider-grid" aria-label="Login sosial demo">
+          <button class="provider-button" type="button" data-demo-provider="Google"><span class="provider-logo google">G</span> Google</button>
+          <button class="provider-button" type="button" data-demo-provider="Facebook"><span class="provider-logo facebook">f</span> Facebook</button>
+          <button class="provider-button" type="button" data-demo-provider="Apple"><span class="provider-logo apple">●</span> Apple</button>
+        </div>
+
+        <div class="divider"><span>atau gunakan akses lokal</span></div>
+        <div class="auth-tabs" role="tablist" aria-label="Metode akses">
+          <button class="auth-tab active" type="button" role="tab" aria-selected="true" data-auth-tab="email">Email bisnis</button>
+          <button class="auth-tab" type="button" role="tab" aria-selected="false" data-auth-tab="phone">Nomor HP + OTP</button>
+        </div>
+
+        <div id="email-section" class="email-section">
+          <form class="auth-form" id="email-form" novalidate>
+            <div class="form-group"><label for="email">Alamat email bisnis</label><input class="input" id="email" name="email" type="email" placeholder="nama@usaha.id" autocomplete="email" required></div>
+            <div class="form-group"><div class="auth-label-row"><label for="password">Kata sandi</label><a href="#reset" data-forgot>Lupa kata sandi?</a></div><div class="password-wrap"><input class="input" id="password" name="password" type="password" minlength="8" placeholder="Minimal 8 karakter" autocomplete="new-password" required><button class="password-toggle" type="button" data-password-toggle="password" aria-label="Tampilkan kata sandi">◉</button></div></div>
+            <label class="remember-row"><input type="checkbox" name="remember"> Ingat tampilan ini di perangkat</label>
+            <button class="button gold full" type="submit">Masuk ke panggung usaha <span class="arrow">→</span></button>
+          </form>
+        </div>
+
+        <div id="phone-section" class="phone-section">
+          <form class="auth-form" id="phone-form" novalidate>
+            <div class="form-group"><label for="phone">Nomor HP</label><input class="input" id="phone" name="phone" type="tel" placeholder="08xxxxxxxxxx" inputmode="tel" autocomplete="tel" required></div>
+            <button class="button gold full" type="submit">Kirim OTP <span class="arrow">→</span></button>
+          </form>
+          <div class="otp-box" id="otp-box"><strong>OTP sesi lokal</strong><span class="otp-code" id="otp-preview">000000</span><span>Untuk versi GitHub Pages, kode hanya digunakan sebagai simulasi aman di browser.</span></div>
+          <form class="auth-form" id="otp-form" style="margin-top:13px" novalidate><div class="form-group"><label for="otp">Masukkan OTP</label><input class="input" id="otp" name="otp" type="text" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" placeholder="6 digit kode" required></div><button class="button blue full" type="submit">Verifikasi nomor <span class="arrow">→</span></button></form>
+        </div>
+
+        <p class="auth-switch">Belum punya akun wirausaha? <a href="login.html?next=studio.html">Buat akun baru</a></p>
+        <div class="security-note"><span aria-hidden="true">◉</span><div><strong>Proteksi sesi aktif</strong>Tidak ada kata sandi sosial yang diminta dan tidak ada token yang ditanam. Data versi GitHub Pages hanya digunakan untuk sesi lokal di perangkat.</div></div>
+      </div>
+    </section>
+  </main>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
